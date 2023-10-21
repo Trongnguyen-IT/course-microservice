@@ -1,7 +1,7 @@
 # course-microservice
 
 docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
-docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down -d
+docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down
 
 # mongo
 
