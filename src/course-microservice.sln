@@ -7,13 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{55
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{13269388-BEF1-435F-891F-4EBA3F181049}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{E04CB5B6-5F2F-4C85-97A9-AC37E66378EF}"
-EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B49964FD-1240-441C-AC06-78ABE42E9FDD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{24639FC3-6A6A-4836-A801-330B3E848D03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{CECB03E0-B23D-41E1-A639-543E42CC2992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{CECB03E0-B23D-41E1-A639-543E42CC2992}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E04CB5B6-5F2F-4C85-97A9-AC37E66378EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E04CB5B6-5F2F-4C85-97A9-AC37E66378EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E04CB5B6-5F2F-4C85-97A9-AC37E66378EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E04CB5B6-5F2F-4C85-97A9-AC37E66378EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B49964FD-1240-441C-AC06-78ABE42E9FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B49964FD-1240-441C-AC06-78ABE42E9FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B49964FD-1240-441C-AC06-78ABE42E9FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,7 +33,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{13269388-BEF1-435F-891F-4EBA3F181049} = {5571140D-C267-4E00-9DBB-AADD0C58E8CF}
-		{E04CB5B6-5F2F-4C85-97A9-AC37E66378EF} = {13269388-BEF1-435F-891F-4EBA3F181049}
 		{24639FC3-6A6A-4836-A801-330B3E848D03} = {5571140D-C267-4E00-9DBB-AADD0C58E8CF}
 		{CECB03E0-B23D-41E1-A639-543E42CC2992} = {24639FC3-6A6A-4836-A801-330B3E848D03}
 	EndGlobalSection
