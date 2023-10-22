@@ -1,4 +1,5 @@
 using Discount.API.AppSettings;
+using Discount.API.Entities;
 using Discount.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,8 @@ builder.Services.Configure<DatabaseSettings>(
 builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
 
 var app = builder.Build();
+
+app.MigrationDatabase<Program>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
