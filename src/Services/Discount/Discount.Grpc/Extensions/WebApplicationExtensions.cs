@@ -1,6 +1,6 @@
 ﻿using Npgsql;
 
-namespace Discount.API.Entities
+namespace Discount.Grpc.Extensions
 {
     public static class WebApplicationExtensions
     {
@@ -47,7 +47,7 @@ namespace Discount.API.Entities
 
                     if (retry < 50)
                     {
-                        System.Threading.Thread.Sleep(2000);
+                        Thread.Sleep(2000);
                         MigrationDatabase<TContext>(webApplication, retry);
                     }
                     throw new Exception(ex.Message);
