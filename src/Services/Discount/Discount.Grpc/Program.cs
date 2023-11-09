@@ -2,6 +2,7 @@ using Discount.Grpc.AppSettings;
 using Discount.Grpc.Extensions;
 using Discount.Grpc.Repositories;
 using Discount.Grpc.Services;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 

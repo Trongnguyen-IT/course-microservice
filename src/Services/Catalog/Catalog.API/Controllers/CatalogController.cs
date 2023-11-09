@@ -5,6 +5,7 @@ using System.Net;
 
 namespace Catalog.API.Controllers
 {
+    [ApiController]
     [Route("api/v1/[controller]")]
     public class CatalogController : ControllerBase
     {
