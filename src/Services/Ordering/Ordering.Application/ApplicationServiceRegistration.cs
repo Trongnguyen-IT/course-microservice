@@ -8,9 +8,9 @@ namespace Ordering.Application
 {
     public static class ApplicationServiceRegistration
     {
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services, Assembly assembly)
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            services.AddAutoMapper(assembly);
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
